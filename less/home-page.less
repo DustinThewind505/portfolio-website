@@ -1,0 +1,433 @@
+.home {
+    .align-column();
+
+// ========================= Top image section =========================
+    .top-image-section {
+        width: 100%;
+        .align-column();
+        background-image: url(https://images.unsplash.com/photo-1485827329522-c625acce0067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 28.5% 0 0;
+
+        @media @mobile {
+            display: none;
+        }
+        
+        .top-image-section-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px black;
+            display: flex;
+        }
+
+        p {            
+            font-size: 6rem;
+            text-align: center;
+            color: @font-color;
+            margin-top: 10%;
+            text-shadow: 1px 1px white;
+            opacity: 0.4;
+        }
+    }
+
+    .bottom-image-section {
+        width: 100%;
+
+
+        div {          
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4%;
+        }
+
+        
+    }
+
+    // ========================= Top searchbar =========================
+    .home-search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color:  @lighter-bg;
+        color: white;        
+        padding: 1.3%;
+        font-size: 2rem;
+
+        @media @mobile {
+            display: none;
+        }
+
+        p {
+            font-size: 1.45rem;
+            font-style: italic;
+        }
+
+        .searchForm {
+            width: 60%;
+        }
+
+
+        input {
+            border-radius: 5px;
+            width: 100%;
+            background-color: @theGrey;
+            padding: 1% 0;
+            border: none;
+        }
+
+        .searchFormLeft {
+            width: 38%;
+        }
+    }
+
+//========================== mobile questions =======================
+.mobile-pro-question {
+    display: none;
+
+    color: white;
+    background-color: green;
+
+    @media @mobile {
+        display: flex;
+    }
+
+    ul {
+        font-size: 2.9rem;
+        list-style-type: disc;
+    }
+
+    li {
+        padding: 3% 10%;
+        list-style-type: disc;
+    }
+}
+
+// ========================= Top ad section =========================
+    .top-section-ad {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 8% 0;
+
+
+        p {
+            font-size: 4rem;
+            margin-top: 12%;
+            color: white;
+
+            @media @mobile {
+                font-size: 2.5rem;
+            }
+        }
+
+    }
+
+    .top-section-ad-left {
+        width: 50%;
+    
+    }
+
+    .top-section-ad-right {
+        .align-column();
+        width: 50%;
+        .img1 {
+            margin-right: -30%;
+            margin-bottom: -9%;
+            background-image: url(https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .img2 {
+            background-image: url(https://images.unsplash.com/photo-1551218370-44f5d7748b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .img3 {
+            margin-right: -30%;
+            margin-top: -6%;
+            background-image: url(https://images.unsplash.com/photo-1532635211-8ec15f2ce05c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        }
+    }
+
+    .img1, .img2, .img3 {
+        .width-height(280px, 172px);
+        background-position: center;
+
+        @media @mobile {
+            .width-height(140px, 103px);
+        }
+    }
+
+// ========================= Top question, Middle question, Bottom question =========================
+    .professional-question {
+        width: 80%;
+        text-align: center;
+        background-color: @lighter-bg;
+        color: @font-color;
+        padding-top: 4% 0;
+        font-size: 5rem;
+        margin: 6% 0;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+
+// ========================= Middle section top=========================
+    .middle-section-top {
+        width: 80%;
+        display: flex;
+        background-color: @ninjaTurtle;
+        margin: 14% 0;
+        border-radius: 12px;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    .middle-section-top-left {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        padding: 3% 8%;
+    }
+
+    .middle-section-top-right {
+        width: 65%;
+        background-color: @ash;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 4%;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        li {
+            color: @font-color;
+            font-size: 4.5rem;
+            list-style-type: disc;
+            margin: 10% ;
+        }
+    }
+
+// ========================= Middle section buttons=========================
+    .middle-section-buttons {
+        width: 70%;
+
+        .middle-sections-phonesIMG {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50%;
+
+            div {
+                .width-height(180px, 360px);
+                background-image: url(http://www.clker.com/cliparts/0/K/2/3/0/U/iphone-hi.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .phoneImg1 {
+                margin-right: -5%;
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+
+            .phoneImg2 {
+                margin-bottom: -35%;
+                z-index: 1;
+            }
+
+            .phoneImg3 {
+                margin-left: -5%;
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+        }
+
+        .middle-sections-learn-start {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                padding: 0.9% 10%;
+                border-radius: 5px;
+                color: black;
+                font-size: 2rem;
+            }
+
+            .learnBtn {
+                .custom-button(@font-color, @ash, 10px);
+            }
+        }
+    }
+
+    .middle-image {
+        width: 80%;
+        display: flex;
+        margin: 25% 0 15%;
+        div {
+            .width-height(33.3%, 652px);
+        }
+
+        .middleimg1{
+            background-image: url(https://images.unsplash.com/photo-1528712306091-ed0763094c98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=680&q=80);
+        
+            @media @mobile {
+                display: none;
+            }
+        }
+
+        .middleimg2 {
+            background-image: url(https://images.unsplash.com/photo-1454334281609-87a89762912c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        
+            @media @mobile {
+                width: 100%;
+            } 
+        }
+
+        .middleimg3 {
+            background-image: url(https://images.unsplash.com/photo-1534766438357-2b270dbd1b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        
+            @media @mobile {
+                display: none;
+            }
+        }
+    }
+
+    .professional-question2 {
+        width: 80%;
+        text-align: center;
+        background-color: @lighter-bg;
+        color: @font-color;
+        padding-top: 4% 0;
+        font-size: 5rem;
+        margin: 6% 0;
+
+        @media @mobile {
+            background-color: @main-bg;
+            font-size: 3rem;
+        }            
+    }
+
+    .middle-section-videos {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 12% 0 21%;
+        @media @mobile {
+            justify-content: center;
+        }
+    }
+
+    .mobile-video {
+        @media @mobile {
+            display: none;
+        }
+    }
+
+
+    .bottom-section-img {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 20px;
+
+        .bottomimg1 {
+            background-image: url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+            border-top-left-radius: 5px;
+        }
+
+        .bottomimg2 {
+            background-image: url(https://images.unsplash.com/photo-1560999448-1288f5c62468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+            border-top-right-radius: 5px;
+        }
+
+        .bottomimg3 {
+            background-image: url(https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+            border-bottom-left-radius: 5px;
+        }
+
+        .bottomimg4 {
+            background-image: url(https://images.unsplash.com/photo-1445979323117-80453f573b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+        }
+
+        .bottomimg5 {
+            background-image: url(https://images.unsplash.com/photo-1571942389648-078c07e6a28f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+            background-size: cover;
+            border-bottom-right-radius: 5px;
+        }
+
+        .bottom-section-img-top {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            div {
+                .width-height(50%, 272px);
+            }
+        }
+
+        .bottom-section-img-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            div {
+                .width-height(396px, 212px);
+            }
+        }
+    }
+
+    
+
+    .bottom-quote {
+        width: 80%;
+        margin: 21% 0 19%;
+
+        .bottom-quote-top {
+            color: @opacity-font;
+            font-size: 4rem;
+            margin-bottom: 3%;
+        }
+
+        .bottom-quote-bottom {
+            font-size: 5rem;
+            color: white;
+            opacity: 0.8;
+        }
+    }
+
+    .bottom-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        a {
+           width: 65%;
+           text-align: center;
+           font-size: 5rem;
+           color: black;
+           border-radius: 10px;
+        }
+    }
+
+
+  
+}// home

@@ -1,0 +1,33 @@
+// =============== parametric mixins =============== 
+.width-height(@width, @height){
+    width: @width;
+    height: @height;
+}
+
+.custom-button(@font-color, @bg-color, @b-radius) {
+    color: @font-color;
+    background-color: @bg-color;
+    border-radius: @b-radius;
+}
+
+.custom-butt-ani(@font-color, @bg-color, @curs) {
+    color: @color;
+    background-color: @bg-color;
+    cursor: @curs;
+}
+
+.align-column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// =============== footer ===============
+.icon-img(){
+    border-radius: 19px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid @opacity-font;
+}
